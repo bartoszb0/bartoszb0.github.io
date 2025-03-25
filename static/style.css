@@ -7,6 +7,18 @@ body {
     align-items: center;
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    background-color: rgb(51, 51, 51);
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 75, 75);
+    border-radius: 20px;
+}
+
+
 /* PROFILE PIC */
 img {
     height: 250px;
@@ -15,20 +27,85 @@ img {
 
 /* DISPLAYED NAME */
 #name-etc p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+#name {
     font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#portfolio {
+    font-size: 25px;
 }
 
 /* BUTTONS */
-.project-button {
+.project-div {
+    margin-bottom: 50px;
+}
+
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
     width: 400px;
     background-color: rgb(43, 43, 43);
-    margin-bottom: 50px;
 }
 
-.project-button span {
+.main .project-name {
     align-items: center;
+    margin-right: 50px;
+}
+
+.main button {
+    background-color: rgb(110, 110, 110);
+    border: 1px solid rgb(110, 110, 110);
+    color: rgb(29, 29, 29);
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.main button:hover {
+    cursor: pointer;
+    background-color: rgb(139, 139, 139);
+    border: 1px solid rgb(139, 139, 139);
+}
+
+.expanded {
+    background-color: rgb(77, 77, 77);
+    height: 0;
+    font-size: 0;
+}
+
+@keyframes expand {
+    0% {
+        height: 0;
+        font-size: 0;
+    }
+
+    100% {
+        height: 130px;
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+@keyframes collapse {
+    0% {
+        height: 130px;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    100% {
+        height: 0;
+        font-size: 0;
+    }
 }
