@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         element.addEventListener('click', function() {
 
             if (!isExpanded) {
-                element.innerHTML = 'HIDE ▼'
+                element.innerHTML = 'HIDE ▲'
                 show_div.style.animation = 'expand 1s forwards';
             } else {
-                element.innerHTML = 'READ MORE ▲'
+                element.innerHTML = 'READ MORE ▼'
                 show_div.style.animation = 'collapse 1s forwards';
             }
             
