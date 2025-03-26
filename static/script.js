@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    document.querySelectorAll('button').forEach(element => {animate(element)})
+    document.querySelectorAll('.operatable').forEach(element => {animate(element)})
 
     function animate(element) {
         const show_div = element.parentElement.parentElement.querySelector('.expanded')

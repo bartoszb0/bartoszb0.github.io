@@ -111,3 +111,40 @@ img {
         opacity: 0;
     }
 }
+
+/* DESCRIPTION */
+.description {
+    height: 160px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.first, .second {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(180, 180, 180);
+    border: 1px solid rgb(49, 49, 49);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.second {
+    background-color: rgb(110, 110, 110);
+}
+
+.first:hover, .second:hover {
+    cursor: pointer;
+    background-color: rgb(95, 95, 95);
+    border: 1px solid rgb(49, 49, 49);
+}
+
+.first {
+    margin-right: 10px;
+}
+
+.second {
+    margin-left: 10px;
+}
